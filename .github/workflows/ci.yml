@@ -26,11 +26,11 @@ jobs:
 
     - name: Run Unit Tests
       run: |
-        pytest
+        PYTHONPATH=. pytest
 
     - name: Run Linter
       run: |
-        flake8 app.py
+        flake8 app/
 
     - name: Build Docker Image
       run: |
