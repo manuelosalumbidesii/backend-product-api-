@@ -1,4 +1,5 @@
-from app import app
+from app.app import app
+
 
 def test_get_products():
     client = app.test_client()
