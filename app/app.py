@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 products = []
 
+
 @app.route('/api/products', methods=['GET'])
 def get_products():
     return jsonify(products)
